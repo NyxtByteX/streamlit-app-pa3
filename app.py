@@ -168,6 +168,25 @@ def main():
             help="Filtra las tecnologías según su nivel de réplica y éxito validado en la comunidad financiera global."
         )
         st.markdown("---")
+     # --- SECCIÓN DE AUTORES Y ENLACES (INTEGRADA EN LA BARRA LATERAL) ---
+        st.markdown("---")
+        with st.expander("👥 Autores y Repositorio Académico"):
+            st.markdown("""
+                <div style='background-color: #0B0E14; padding: 12px; border-radius: 6px; border: 1px solid #30363D; margin-bottom: 8px;'>
+                    <p style='margin: 0; font-size: 0.9rem; color: #00CED1; font-weight: bold;'>Peter Cajusol</p>
+                </div>    
+                <div style='background-color: #0B0E14; padding: 12px; border-radius: 6px; border: 1px solid #30363D; margin-bottom: 15px;'>
+                    <p style='margin: 0; font-size: 0.9rem; color: #FF1493; font-weight: bold;'>Victoria De la Vega</p>
+                </div>
+            """, unsafe_allow_html=True)
+            
+            # Enlace al Google Colab configurado como un link nativo de Streamlit
+            st.link_button(
+                "🔗 Ver Cuaderno Google Colab", 
+                "https://colab.research.google.com/drive/1GUhTOVQ1noMUZL3y-jC0349brgKmFh4N?usp=sharing",
+                use_container_width=True,
+                help="Accede al entorno de desarrollo y procesamiento inicial en Google Colab."
+            )
         st.caption("⚡ Powered by ChurnAI Engine v3.5 • Mercado Peruano 2026")
 
     # --- 5. FILTRADO DINÁMICO DE DATOS ---
